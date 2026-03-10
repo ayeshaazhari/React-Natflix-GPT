@@ -6,7 +6,20 @@
  - Header 
  - Login Form
  - Signup form 
- - Validations (can use Formik )
+ - Form Validations (can use Formik )
+ - useRef Hook
+ - Firebase setup
+ - Deploying app to production
+ - Create signup user account
+ - Integrate Signin and signup API
+ - Setup redux store  ( npm i -D @reduxjs/toolkit and npm i react-redux )
+ - Redux dev tools chrome extension 
+ - implemented Signout
+ - update profile 
+ - redirected app using useNavigate
+ - Fetch movies from TMDB
+ - 
+ -  qwer@1234.com ,Qwer@1234
 
 # Features
 - Login/Signup
