@@ -7,9 +7,9 @@ import {
   updateProfile,
 } from "firebase/auth";
 import { auth } from "../utils/firebase";
-import { useNavigate } from "react-router-dom";
 import { addUser } from "../utils/userSlice";
 import { useDispatch } from "react-redux";
+import { PHOTOURL, Banner_Img } from "../utils/constants";
 
 const Login = () => {
   const dispatch = useDispatch();
@@ -18,7 +18,6 @@ const Login = () => {
   const email = useRef(null);
   const password = useRef(null);
   const fullName = useRef("");
-  const navigate = useNavigate();
   const handleButtonClick = () => {
     // validate the form data
     const message = checkValidData(email.current.value, password.current.value);
@@ -39,8 +38,7 @@ const Login = () => {
           const user = userCredential.user;
           updateProfile(user, {
             displayName: fullName.current.value,
-            photoURL:
-              "https://avatars.githubusercontent.com/u/4310096?v=4&size=64",
+            photoURL: PHOTOURL,
           })
             .then(() => {
               // Profile updated!
@@ -54,7 +52,6 @@ const Login = () => {
                   photoURL: photoURL,
                 })
               );
-              navigate("/browser");
             })
             .catch((error) => {
               // An error occurred
@@ -78,7 +75,6 @@ const Login = () => {
           const loggedUser = userCredential.user;
           // ...
           console.log("loggedUser", loggedUser);
-          navigate("/browser");
         })
         .catch((error) => {
           const errorCode = error.code;
@@ -94,10 +90,7 @@ const Login = () => {
     <div>
       <Header />
       <div className="absolute">
-        <img
-          alt="BannerImage"
-          src="https://assets.nflxext.com/ffe/siteui/vlv3/b9448d14-5983-4ffc-a4d6-e22223108466/web/IN-en-20260302-TRIFECTA-perspective_1ef91182-c674-4632-9bec-d185993ab154_large.jpg"
-        ></img>
+        <img alt="BannerImage" src={Banner_Img}></img>
       </div>
       <form
         onSubmit={(e) => e.preventDefault()}

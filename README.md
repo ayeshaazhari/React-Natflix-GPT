@@ -18,6 +18,20 @@
  - update profile 
  - redirected app using useNavigate
  - Fetch movies from TMDB
+ - Bug fix display name , profile picture update
+ - BugFix - if user is logged in redirect tot browser page & not logged redirect to login page
+ - Unsubscribed to the onAuthStateChange callback
+ - Add hard coded values to constant file
+ - Lot of things happened 2wice, since <React.StrictMode> it only happens in development mode not in production.
+ - Register TMDB api * create an app and get access
+ - Get Data from TMDB now playing movie list
+ - Custom hook for Now playing movies
+ - create movieSlice
+ - Update store with movies Data
+ - Planning for MainContainer & Secondary container
+ - Custom hook for trailer video
+ - Update store with trailerVideo data
+ - -Embeded Youtube and make auto play and mute
  - 
  -  qwer@1234.com ,Qwer@1234
 
