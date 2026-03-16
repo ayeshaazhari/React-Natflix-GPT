@@ -32,7 +32,9 @@
  - Custom hook for trailer video
  - Update store with trailerVideo data
  - -Embeded Youtube and make auto play and mute
- - 
+ - Secondary page design 
+ - Movie list , Movie Card
+ - Popular movies hook
  -  qwer@1234.com ,Qwer@1234
 
 # Features
