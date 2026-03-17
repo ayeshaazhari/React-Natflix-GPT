@@ -35,6 +35,9 @@
  - Secondary page design 
  - Movie list , Movie Card
  - Popular movies hook
+ - GPT search Feature
+ - Multi language feature 
+ - Integrate GPT API's
  -  qwer@1234.com ,Qwer@1234
 
 # Features
